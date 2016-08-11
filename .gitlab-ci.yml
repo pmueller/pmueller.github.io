@@ -6,6 +6,6 @@ pages:
   - echo 'Hello?'
   artifacts:
     paths:
-    - src
+    - public
   only:
   - master
