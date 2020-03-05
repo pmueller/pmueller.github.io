@@ -1,3 +1,1 @@
-# preston.codes website
-
-Hosted on gitlab
+Personal website
