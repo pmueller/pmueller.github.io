@@ -1,32 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>preston mueller</title>
+  <title>Preston Mueller</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <style>
     body {
-      margin: 0.67em auto 0;
-      font-family: monospace, serif;
+      max-width: 35em;
+      padding: 0 40px;
+      background-color: #f7f8f9;
       color: #333;
-      width: 400px;
-      max-width: 100%;
-      text-align: center;
+      font-family: monospace, serif;
+      font-size: 20px;
     }
 
-    img {
-      width: 120px;
-      height: 120px;
+    .position-title {
+      display: inline-block;
+    }
+
+    .position-title::before {
+      content: "- ";
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 0 25px;
+      }
+
+      .position-title {
+        display: block;
+      }
+
+      .position-title::before {
+        content: "";
+      }
+    }
+
+    h1, h2, h3, h4, h5 { font-weight: 400; }
+    h1 { font-size: 40px; }
+    h2 { font-size: 30px; }
+
+    ul {
+      padding-inline-start: 0;
+      list-style-type: none;
+    }
+    ul li {
+      margin: 30px 0 35px;
+    }
+
+    section {
+      margin-bottom: 70px;
+    }
+
+    .badge {
+      font-size: 16px;
+      padding: 2px 8px;
+      margin-right: 2px;
+      border-radius: .25rem;
+    }
+    .ruby {
+      color: #fff;
+      background-color: #701516;
+    }
+    .js { background-color: #f1e05a; }
+    .elixir {
+      color: #fff;
+      background-color: #6e4a7e;
+    }
+    .misc {
+      color: #fff;
+      background-color: #6c757d;
     }
   </style>
 </head>
 
 <body>
-  <img src="_.jpg" />
-  <h1>preston mueller</h1>
-  <a href="mailto:preston@preston.codes">mail</a>
-  *
-  <a href="https://github.com/pmueller">github</a>
-  *
-  <a href="https://bandcamp.com/pralz">bandcamp</a>
+  <section>
+    <h1>Preston Mueller</h1>
+    <p>Hello! I'm a software engineer with 7 years of experience building user-friendly and scalable web products for early-stage startups.</p>
+    <a target="_blank" href="https://github.com/pmueller">Github</a>
+    -
+    <a href="mailto:preston@preston.codes">Email</a>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a target="_blank" href="https://github.com/pmueller/taleb">Taleb</a> is a <a target="_blank" href="https://en.wikipedia.org/wiki/Markov_chain">markov chain</a> bot for slack. You can use any text as the data set and it will randomly reply with a generated paragraph.
+        <div>
+          <span class='badge ruby'>ruby</span><span class='badge misc'>redis</span>
+        </div>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/pmueller/chirper">Chirper</a> is a purposefully insecure web app resembling a crappy version of Twitter. It can be used for practice finding and exploiting common web vulnerabilities.
+        <div>
+          <span class='badge ruby'>ruby</span><span class='badge ruby'>sinatra</span>
+        </div>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/pmueller/photon">Photon</a> is a browser-based game that requires accuracy and high APM. Currently requires a mouse and keyboard, so it's non-functional on mobile.
+        <div>
+          <span class='badge js'>javascript</span>
+        </div>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/pmueller/gimme_tix">Gimme Tix</a> is a proof of concept ticket reservation queue that deals with the problem of a large number of people simultaneously trying to buy a small number of tickets.
+        <div>
+          <span class='badge elixir'>elixir</span><span class='badge elixir'>phoenix</span>
+        </div>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/pmueller/1dmusic">1D Music</a> is a web interface for creating cellular automata rules and simulations that can be mapped to sound.
+        <div>
+           <span class='badge ruby'>ruby on rails</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Previous Positions</h2>
+    <ul>
+      <li>
+        <a target="_blank" href="https://www.loopandtie.com">Loop &amp; Tie</a>
+        <div class='position-title'>Sr. Software Engineer</div>
+      </li>
+      <li>
+        <a target="_blank" href="https://paracosm.io">Paracosm</a>
+        <div class='position-title'>Software Engineer</div>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.shadowhealth.com">Shadow Health</a>
+        <div class='position-title'>Web Developer</div>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
