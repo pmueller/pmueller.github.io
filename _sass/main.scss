@@ -1,0 +1,73 @@
+$backgroundColor: #f7f8f9;
+$bodyColor: #333;
+$bodyFont: monospace, serif;
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  font-size: 20px;
+  max-width: 35em;
+  padding: 0 40px;
+}
+
+.position-title {
+  display: inline-block;
+
+  &::before {
+    content: "- ";
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 0 25px;
+  }
+
+  .position-title {
+    display: block;
+
+    &::before {
+      content: "- ";
+    }
+  }
+}
+
+h1, h2, h3, h4, h5 { font-weight: 400; }
+h1 { font-size: 40px; }
+h2 { font-size: 30px; }
+
+ul {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    margin: 30px 0 35px;
+  }
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.badge {
+  font-size: 16px;
+  padding: 2px 8px;
+  margin-right: 2px;
+  border-radius: .25rem;
+}
+.ruby {
+  color: #fff;
+  background-color: #701516;
+}
+.js { background-color: #f1e05a; }
+.elixir {
+  color: #fff;
+  background-color: #6e4a7e;
+}
+.misc {
+  color: #fff;
+  background-color: #6c757d;
+}

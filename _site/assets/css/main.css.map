@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"$backgroundColor: #f7f8f9;\n$bodyColor: #333;\n$bodyFont: monospace, serif;\n\nbody {\n  background: $backgroundColor;\n  color: $bodyColor;\n  font-family: $bodyFont;\n  font-size: 20px;\n  max-width: 35em;\n  padding: 0 40px;\n}\n\n.position-title {\n  display: inline-block;\n\n  &::before {\n    content: \"- \";\n  }\n}\n\n@media (max-width: 520px) {\n  body {\n    padding: 0 25px;\n  }\n\n  .position-title {\n    display: block;\n\n    &::before {\n      content: \"- \";\n    }\n  }\n}\n\nh1, h2, h3, h4, h5 { font-weight: 400; }\nh1 { font-size: 40px; }\nh2 { font-size: 30px; }\n\nul {\n  -webkit-padding-start: 0;\n  padding-inline-start: 0;\n  padding-left: 0;\n  list-style-type: none;\n\n  li {\n    margin: 30px 0 35px;\n  }\n}\n\nsection {\n  margin-bottom: 70px;\n}\n\n.badge {\n  font-size: 16px;\n  padding: 2px 8px;\n  margin-right: 2px;\n  border-radius: .25rem;\n}\n.ruby {\n  color: #fff;\n  background-color: #701516;\n}\n.js { background-color: #f1e05a; }\n.elixir {\n  color: #fff;\n  background-color: #6e4a7e;\n}\n.misc {\n  color: #fff;\n  background-color: #6c757d;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACIA,AAAA,IAAI,CAAC,EACH,UAAU,EALM,OAAO,EAMvB,KAAK,EALK,IAAI,EAMd,WAAW,EALF,SAAS,EAAE,KAAK,EAMzB,SAAS,EAAE,IAAI,EACf,SAAS,EAAE,IAAI,EACf,OAAO,EAAE,MAAM,GAChB;;AAED,AAAA,eAAe,CAAC,EACd,OAAO,EAAE,YAAY,GAKtB;;AAND,AAGE,eAHa,EAGV,MAAM,CAAC,EACR,OAAO,EAAE,IAAI,GACd;;AAGH,MAAM,mBACJ,GAAA,AAAA,IAAI,CAAC,EACH,OAAO,EAAE,MAAM,GAChB,CAED,AAAA,eAAe,CAAC,EACd,OAAO,EAAE,KAAK,GAKf,CAND,AAGE,eAHa,EAGV,MAAM,CAAC,EACR,OAAO,EAAE,IAAI,GACd,EAPF;;AAWH,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EAAE,WAAW,EAAE,GAAG,GAAI;;AACzC,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,IAAI,GAAI;;AACxB,AAAA,EAAE,CAAC,EAAE,SAAS,EAAE,IAAI,GAAI;;AAExB,AAAA,EAAE,CAAC,EACD,qBAAqB,EAAE,CAAC,EACxB,oBAAoB,EAAE,CAAC,EACvB,YAAY,EAAE,CAAC,EACf,eAAe,EAAE,IAAI,GAKtB;;AATD,AAME,EANA,CAMA,EAAE,CAAC,EACD,MAAM,EAAE,WAAW,GACpB;;AAGH,AAAA,OAAO,CAAC,EACN,aAAa,EAAE,IAAI,GACpB;;AAED,AAAA,MAAM,CAAC,EACL,SAAS,EAAE,IAAI,EACf,OAAO,EAAE,OAAO,EAChB,YAAY,EAAE,GAAG,EACjB,aAAa,EAAE,MAAM,GACtB;;AACD,AAAA,KAAK,CAAC,EACJ,KAAK,EAAE,IAAI,EACX,gBAAgB,EAAE,OAAO,GAC1B;;AACD,AAAA,GAAG,CAAC,EAAE,gBAAgB,EAAE,OAAO,GAAI;;AACnC,AAAA,OAAO,CAAC,EACN,KAAK,EAAE,IAAI,EACX,gBAAgB,EAAE,OAAO,GAC1B;;AACD,AAAA,KAAK,CAAC,EACJ,KAAK,EAAE,IAAI,EACX,gBAAgB,EAAE,OAAO,GAC1B"
+}
